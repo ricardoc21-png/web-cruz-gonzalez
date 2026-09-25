@@ -1,9 +1,9 @@
 import os
 from flask import Flask, render_template
-from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
+from extensions import db
 
-# Cargar variables de entorno con ruta absoluta
+# Cargar variables de entorno
 load_dotenv('/home/RichiCruz21/catalogo_seguro/.env')
 
 app = Flask(__name__)
@@ -14,12 +14,12 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Inicializar base de datos
-db = SQLAlchemy(app)
+db.init_app(app)
 
-# Importar modelos
+# Importar modelos DESPUÉS de inicializar db
 from models import Equipo
 
-# Ruta principal - Catálogo público
+# Ruta principal
 @app.route('/')
 @app.route('/catalogo')
 def catalogo():
@@ -28,3 +28,4 @@ def catalogo():
 
 if __name__ == '__main__':
     app.run(debug=False)
+
