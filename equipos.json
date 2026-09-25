@@ -1,0 +1,188 @@
+[
+  {
+    "id": 1,
+    "marca": "Lenovo",
+    "modelo": "ThinkPad T480",
+    "especificaciones": "Intel Core i5, 16GB RAM, 512GB SSD",
+    "precio": 850000,
+    "imagen_url": "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=400",
+    "disponible": true
+  },
+  {
+    "id": 2,
+    "marca": "Dell",
+    "modelo": "Latitude 7490",
+    "especificaciones": "Intel Core i7, 16GB RAM, 256GB SSD",
+    "precio": 950000,
+    "imagen_url": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400",
+    "disponible": true
+  },
+  {
+    "id": 3,
+    "marca": "HP",
+    "modelo": "EliteBook 840 G5",
+    "especificaciones": "Intel Core i5, 8GB RAM, 256GB SSD",
+    "precio": 750000,
+    "imagen_url": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400",
+    "disponible": true
+  },
+  {
+    "id": 4,
+    "marca": "Lenovo",
+    "modelo": "ThinkPad X1 Carbon",
+    "especificaciones": "Intel Core i7, 16GB RAM, 512GB SSD",
+    "precio": 1200000,
+    "imagen_url": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400",
+    "disponible": true
+  },
+  {
+    "id": 5,
+    "marca": "Dell",
+    "modelo": "Precision 5530",
+    "especificaciones": "Intel Core i7, 32GB RAM, 1TB SSD",
+    "precio": 1500000,
+    "imagen_url": "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=400",
+    "disponible": true
+  },
+  {
+    "id": 6,
+    "marca": "HP",
+    "modelo": "ZBook 15 G5",
+    "especificaciones": "Intel Core i7, 16GB RAM, 512GB SSD",
+    "precio": 1100000,
+    "imagen_url": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400",
+    "disponible": true
+  },
+  {
+    "id": 7,
+    "marca": "Lenovo",
+    "modelo": "ThinkPad T490",
+    "especificaciones": "Intel Core i5, 8GB RAM, 256GB SSD",
+    "precio": 700000,
+    "imagen_url": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400",
+    "disponible": true
+  },
+  {
+    "id": 8,
+    "marca": "Dell",
+    "modelo": "XPS 13",
+    "especificaciones": "Intel Core i7, 16GB RAM, 512GB SSD",
+    "precio": 1300000,
+    "imagen_url": "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=400",
+    "disponible": true
+  },
+  {
+    "id": 9,
+    "marca": "HP",
+    "modelo": "ProBook 450 G6",
+  
+[
+  {
+    "id": 1,
+    "marca": "Lenovo",
+    "modelo": "ThinkPad T480",
+    "especificaciones": "Intel Core i5, 16GB RAM, 512GB SSD",
+    "precio": 850000,
+    "imagen_url": "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=400",
+    "disponible": true
+  },
+  {
+    "id": 2,
+    "marca": "Dell",
+    "modelo": "Latitude 7490",
+    "especificaciones": "Intel Core i7, 16GB RAM, 256GB SSD",
+    "precio": 950000,
+    "imagen_url": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400",
+    "disponible": true
+  },
+  {
+    "id": 3,
+    "marca": "HP",
+    "modelo": "EliteBook 840 G5",
+    "especificaciones": "Intel Core i5, 8GB RAM, 256GB SSD",
+    "precio": 750000,
+    "imagen_url": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400",
+    "disponible": true
+  },
+  {
+    "id": 4,
+    "marca": "Lenovo",
+    "modelo": "ThinkPad X1 Carbon",
+    "especificaciones": "Intel Core i7, 16GB RAM, 512GB SSD",
+    "precio": 1200000,
+    "imagen_url": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400",
+    "disponible": true
+  },
+  {
+    "id": 5,
+    "marca": "Dell",
+    "modelo": "Precision 5530",
+    "especificaciones": "Intel Core i7, 32GB RAM, 1TB SSD",
+    "precio": 1500000,
+    "imagen_url": "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=400",
+    "disponible": true
+  },
+  {
+    "id": 6,
+    "marca": "HP",
+    "modelo": "ZBook 15 G5",
+    "especificaciones": "Intel Core i7, 16GB RAM, 512GB SSD",
+    "precio": 1100000,
+    "imagen_url": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400",
+    "disponible": true
+  },
+  {
+    "id": 7,
+    "marca": "Lenovo",
+    "modelo": "ThinkPad T490",
+    "especificaciones": "Intel Core i5, 8GB RAM, 256GB SSD",
+    "precio": 700000,
+    "imagen_url": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400",
+    "disponible": true
+  },
+  {
+    "id": 8,
+    "marca": "Dell",
+    "modelo": "XPS 13",
+    "especificaciones": "Intel Core i7, 16GB RAM, 512GB SSD",
+    "precio": 1300000,
+    "imagen_url": "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=400",
+    "disponible": true
+  },
+  {
+    "id": 9,
+    "marca": "HP",
+    "modelo": "ProBook 450 G6",
+    "especificaciones": "Intel Core i5, 8GB RAM, 256GB SSD",
+    "precio": 650000,
+    "imagen_url": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400",
+    "disponible": true
+  },
+  {
+    "id": 10,
+    "marca": "Lenovo",
+    "modelo": "ThinkPad E480",
+    "especificaciones": "Intel Core i5, 8GB RAM, 256GB SSD",
+    "precio": 600000,
+    "imagen_url": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400",
+    "disponible": true
+  },
+  {
+    "id": 11,
+    "marca": "Dell",
+    "modelo": "Inspiron 15",
+    "especificaciones": "Intel Core i5, 8GB RAM, 512GB SSD",
+    "precio": 750000,
+    "imagen_url": "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=400",
+    "disponible": true
+  },
+  {
+    "id": 12,
+    "marca": "HP",
+    "modelo": "Pavilion 15",
+    "especificaciones": "Intel Core i5, 8GB RAM, 256GB SSD",
+    "precio": 680000,
+    "imagen_url": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400",
+    "disponible": true
+  }
+]

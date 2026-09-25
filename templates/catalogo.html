@@ -24,7 +24,6 @@
             min-height: 100vh;
         }
         
-        /* Header Profesional */
         .header-profesional {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
@@ -72,7 +71,6 @@
             margin: 0;
         }
         
-        /* Hero Section */
         .hero-section {
             padding: 3rem 0;
             text-align: center;
@@ -91,7 +89,6 @@
             opacity: 0.95;
         }
         
-        /* Tarjetas de Equipos */
         .equipo-card {
             background: white;
             border-radius: 20px;
@@ -190,7 +187,6 @@
             font-weight: 600;
         }
         
-        /* Footer */
         .footer-profesional {
             background: rgba(255, 255, 255, 0.95);
             margin-top: 4rem;
@@ -203,7 +199,6 @@
             margin: 0;
         }
         
-        /* Responsive */
         @media (max-width: 768px) {
             .hero-section h2 {
                 font-size: 1.8rem;
@@ -231,7 +226,7 @@
                     </div>
                 </div>
                 <div class="contacto-header">
-                    <a href="https://wa.me/573001234567" class="btn btn-success" target="_blank">
+                    <a href="https://wa.me/577" class="btn btn-success" target="_blank">
                         <i class="fab fa-whatsapp"></i> Contáctanos
                     </a>
                 </div>
@@ -253,27 +248,27 @@
             {% for equipo in equipos %}
             <div class="col-md-4 mb-4">
                 <div class="equipo-card position-relative">
-                    {% if equipo.disponible %}
+                    {% if equipo.get('disponible', True) %}
                     <span class="equipo-badge">
                         <i class="fas fa-check-circle"></i> Disponible
                     </span>
                     {% endif %}
                     
-                    <img src="{{ equipo.imagen_url or 'https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=400' }}" 
+                    <img src="{{ equipo.get('imagen_url', 'https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=400') }}" 
                          class="equipo-image" 
-                         alt="{{ equipo.modelo }}">
+                         alt="{{ equipo['modelo'] }}">
                     
                     <div class="equipo-body">
-                        <h3 class="equipo-title">{{ equipo.marca }} {{ equipo.modelo }}</h3>
+                        <h3 class="equipo-title">{{ equipo['marca'] }} {{ equipo['modelo'] }}</h3>
                         <p class="equipo-specs">
-                            <i class="fas fa-microchip"></i> {{ equipo.especificaciones }}
+                            <i class="fas fa-microchip"></i> {{ equipo['especificaciones'] }}
                         </p>
                         
                         <div class="equipo-price">
-                            ${{ "{:,.0f}".format(equipo.precio) }} COP
+                            ${{ "{:,.0f}".format(equipo['precio']) }} COP
                         </div>
                         
-                        <a href="https://wa.me/573001234567?text=Hola,%20estoy%20interesado%20en%20el%20{{ equipo.marca }}%20{{ equipo.modelo }}%20de%20su%20catálogo" 
+                        <a href="https://wa.me/573107616619?text=Hola,%20estoy%20interesado%20en%20el%20{{ equipo['marca'] }}%20{{ equipo['modelo'] }}%20de%20su%20catálogo" 
                            class="btn-whatsapp" 
                            target="_blank">
                             <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
