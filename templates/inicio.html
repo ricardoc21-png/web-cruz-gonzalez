@@ -9,73 +9,146 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-        body { background: #f8f9fa; }
+        body { background: #f8fafc; }
         
         /* NAVBAR */
         .navbar-custom {
             background: white;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 20px rgba(14, 165, 233, 0.15);
             padding: 1rem 0;
+            border-bottom: 3px solid #0ea5e9;
         }
         .navbar-custom .nav-link {
-            color: #2d3748;
+            color: #0f172a;
             font-weight: 600;
             margin: 0 10px;
+            transition: color 0.3s;
         }
-        .navbar-custom .nav-link:hover { color: #667eea; }
+        .navbar-custom .nav-link:hover { color: #0ea5e9; }
         
         /* HERO */
         .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%);
             color: white;
             padding: 6rem 0;
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
-        .hero h1 { font-size: 3rem; font-weight: 900; margin-bottom: 1rem; }
-        .hero p { font-size: 1.3rem; margin-bottom: 2rem; }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+        }
+        .hero h1 { 
+            font-size: 3.5rem; 
+            font-weight: 900; 
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        .hero p { 
+            font-size: 1.4rem; 
+            margin-bottom: 2rem;
+            position: relative;
+        }
         .btn-hero {
-            background: #25d366;
-            color: white;
-            padding: 15px 40px;
-            font-size: 1.2rem;
+            background: #f59e0b;
+            color: #0f172a;
+            padding: 18px 45px;
+            font-size: 1.3rem;
             font-weight: 700;
             border-radius: 50px;
             border: none;
             text-decoration: none;
             display: inline-block;
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+            transition: all 0.3s;
+            position: relative;
         }
-        .btn-hero:hover { background: #128c7e; color: white; transform: scale(1.05); }
+        .btn-hero:hover { 
+            background: #d97706; 
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(245, 158, 11, 0.6);
+            color: #0f172a;
+        }
         
         /* SERVICIOS */
-        .servicios-section { padding: 5rem 0; }
+        .servicios-section { padding: 5rem 0; background: #f8fafc; }
         .servicio-card {
             background: white;
-            padding: 2rem;
+            padding: 2.5rem 2rem;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(14, 165, 233, 0.1);
             text-align: center;
-            transition: transform 0.3s;
+            transition: all 0.3s;
             height: 100%;
+            border-top: 4px solid #0ea5e9;
         }
-        .servicio-card:hover { transform: translateY(-10px); }
+        .servicio-card:hover { 
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(14, 165, 233, 0.2);
+            border-top-color: #f59e0b;
+        }
         .servicio-icon {
-            font-size: 3rem;
-            color: #667eea;
-            margin-bottom: 1rem;
+            font-size: 3.5rem;
+            color: #0ea5e9;
+            margin-bottom: 1.5rem;
         }
-        .servicio-card h3 { color: #2d3748; margin-bottom: 1rem; }
-        .servicio-card p { color: #718096; }
+        .servicio-card h3 { 
+            color: #0f172a; 
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        .servicio-card p { color: #64748b; }
+        .servicio-card .btn {
+            border-color: #0ea5e9;
+            color: #0ea5e9;
+            font-weight: 600;
+        }
+        .servicio-card .btn:hover {
+            background: #0ea5e9;
+            color: white;
+        }
+        
+        /* STATS */
+        .stats-section {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 4rem 0;
+        }
+        .stat-item h3 {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #10b981;
+        }
+        .stat-item p { color: #94a3b8; }
         
         /* CTA */
         .cta-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
             color: white;
             padding: 4rem 0;
             text-align: center;
         }
+        .cta-section h2 { font-size: 2.5rem; font-weight: 700; }
         
         /* FOOTER */
-        footer { background: #2d3748; color: white; padding: 2rem 0; text-align: center; }
+        footer { 
+            background: #0f172a; 
+            color: white; 
+            padding: 2rem 0; 
+            text-align: center;
+            border-top: 3px solid #0ea5e9;
+        }
+        footer a { color: #94a3b8; transition: color 0.3s; }
+        footer a:hover { color: #0ea5e9; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .btn-hero { padding: 15px 30px; font-size: 1.1rem; }
+        }
     </style>
 </head>
 <body>
@@ -83,8 +156,8 @@
     <!-- NAVBAR -->
     <nav class="navbar-custom sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="/">
-                <i class="fas fa-laptop-code text-primary"></i> Cruz González
+            <a class="navbar-brand fw-bold" href="/" style="color: #0ea5e9;">
+                <i class="fas fa-laptop-code"></i> Cruz González
             </a>
             <div class="d-flex align-items-center flex-wrap">
                 <a href="/" class="nav-link">Inicio</a>
@@ -111,10 +184,44 @@
         </div>
     </section>
 
+    <!-- STATS -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-3">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Clientes Satisfechos</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="stat-item">
+                        <h3>6 Meses</h3>
+                        <p>de Garantía</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Soporte Técnico</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Equipos Certificados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- SERVICIOS -->
     <section class="servicios-section">
         <div class="container">
-            <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 700; color: #2d3748;">Nuestros Servicios</h2>
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 700; color: #0f172a;">
+                Nuestros Servicios
+            </h2>
             <div class="row g-4">
                 <div class="col-md-3">
                     <div class="servicio-card">
@@ -156,8 +263,8 @@
     <section class="cta-section">
         <div class="container">
             <h2>¿Necesitas ayuda con tu equipo?</h2>
-            <p class="mb-4">Estamos listos para atenderte</p>
-            <a href="https://wa.me/573107616619" class="btn-hero" target="_blank">
+            <p class="mb-4" style="font-size: 1.2rem;">Estamos listos para atenderte</p>
+            <a href="https://wa.me/573107616619" class="btn-hero" target="_blank" style="background: white; color: #059669;">
                 <i class="fab fa-whatsapp"></i> Escríbenos
             </a>
         </div>
@@ -168,9 +275,10 @@
         <div class="container">
             <p>&copy; 2026 Soporte Técnico Cruz González. Todos los derechos reservados.</p>
             <p class="mt-2">
-                <a href="https://wa.me/573107616619" class="text-white me-3"><i class="fab fa-whatsapp"></i></a>
-                <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/573107616619" class="me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#"><i class="fab fa-tiktok fa-lg"></i></a>
             </p>
         </div>
     </footer>
