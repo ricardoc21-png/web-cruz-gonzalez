@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nombre": "Windows 11 Pro",
+    "descripcion": "Licencia original activada",
+    "precio": 180000,
+    "imagen_url": "https://images.unsplash.com/photo-1624571409412-1f253e1ecc39?w=400",
+    "disponible": true
+  },
+  {
+    "id": 2,
+    "nombre": "Microsoft Office 2021",
+    "descripcion": "Word, Excel, PowerPoint, Outlook",
+    "precio": 150000,
+    "imagen_url": "https://images.unsplash.com/photo-1633419461186-7d40a38105ec?w=400",
+    "disponible": true
+  },
+  {
+    "id": 3,
+    "nombre": "Antivirus Kaspersky 1 Año",
+    "descripcion": "Protección completa para 1 PC",
+    "precio": 95000,
+    "imagen_url": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400",
+    "disponible": true
+  },
+  {
+    "id": 4,
+    "nombre": "Adobe Creative Cloud",
+    "descripcion": "Photoshop, Illustrator, Premiere (1 mes)",
+    "precio": 85000,
+    "imagen_url": "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400",
+    "disponible": true
+  },
+  {
+    "id": 5,
+    "nombre": "AutoCAD 2024",
+    "descripcion": "Licencia para diseño técnico",
+    "precio": 220000,
+    "imagen_url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400",
+    "disponible": true
+  }
+]
