@@ -3,29 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios Técnicos | Soporte Técnico Cruz González</title>
+    <title>Servicios | Soporte Técnico Cruz González</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Poppins', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
-        .navbar-custom { background: white; padding: 1rem 0; box-shadow: 0 2px 20px rgba(0,0,0,0.1); }
-        .navbar-custom .nav-link { color: #2d3748; font-weight: 600; margin: 0 10px; }
-        .servicio-card { background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15); height: 100%; transition: transform 0.3s; }
-        .servicio-card:hover { transform: translateY(-10px); }
-        .servicio-icon { font-size: 3rem; color: #667eea; margin-bottom: 1rem; }
-        .precio { font-size: 2rem; font-weight: 700; color: #667eea; }
-        .tiempo { color: #718096; font-size: 0.9rem; }
-        .btn-wa { background: #25d366; color: white; border: none; padding: 12px; border-radius: 12px; text-decoration: none; display: block; text-align: center; font-weight: 600; margin-top: 1rem; }
-        .btn-wa:hover { background: #128c7e; color: white; }
-        h1 { color: white; text-align: center; padding: 3rem 0; font-weight: 700; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+            min-height: 100vh;
+        }
+        .navbar-custom {
+            background: white; box-shadow: 0 4px 20px rgba(14, 165, 233, 0.2);
+            padding: 1rem 0; position: sticky; top: 0; z-index: 1000;
+            border-bottom: 3px solid #0ea5e9;
+        }
+        .navbar-custom .nav-link { color: #0f172a; font-weight: 600; margin: 0 10px; }
+        .navbar-custom .nav-link:hover { color: #0ea5e9; }
+        .navbar-brand { color: #0ea5e9 !important; font-weight: 700; }
+        h1 { color: white; text-align: center; padding: 3rem 0; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        .servicio-card {
+            background: white; border-radius: 20px; padding: 2rem;
+            box-shadow: 0 10px 30px rgba(14, 165, 233, 0.2);
+            height: 100%; transition: all 0.3s;
+            border-top: 4px solid #0ea5e9;
+        }
+        .servicio-card:hover {
+            transform: translateY(-10px);
+            border-top-color: #f59e0b;
+            box-shadow: 0 20px 40px rgba(14, 165, 233, 0.3);
+        }
+        .servicio-icon { font-size: 3rem; color: #0ea5e9; margin-bottom: 1rem; }
+        .servicio-card h4 { color: #0f172a; font-weight: 700; margin-bottom: 1rem; }
+        .servicio-card p { color: #64748b; }
+        .precio { font-size: 2rem; font-weight: 700; color: #0ea5e9; margin: 1rem 0; }
+        .tiempo { color: #64748b; font-size: 0.9rem; }
+        .tiempo i { color: #f59e0b; }
+        .btn-wa {
+            background: #25d366; color: white; border: none;
+            padding: 12px; border-radius: 12px;
+            text-decoration: none; display: block; text-align: center;
+            font-weight: 600; transition: all 0.3s;
+        }
+        .btn-wa:hover { background: #128c7e; color: white; transform: scale(1.05); }
+        .footer {
+            background: white; margin-top: 3rem; padding: 2rem 0;
+            text-align: center; border-top: 3px solid #0ea5e9;
+        }
+        .footer p { color: #64748b; margin: 0; }
     </style>
 </head>
 <body>
 
-    <nav class="navbar-custom sticky-top">
+    <nav class="navbar-custom">
         <div class="container d-flex justify-content-between align-items-center flex-wrap">
-            <a class="navbar-brand fw-bold" href="/"><i class="fas fa-laptop-code text-primary"></i> Cruz González</a>
+            <a class="navbar-brand" href="/"><i class="fas fa-laptop-code"></i> Cruz González</a>
             <div class="d-flex flex-wrap">
                 <a href="/" class="nav-link">Inicio</a>
                 <a href="/equipos" class="nav-link">Equipos</a>
@@ -46,7 +79,7 @@
                 <div class="servicio-card">
                     <div class="servicio-icon"><i class="fas {{ servicio['icono'] }}"></i></div>
                     <h4>{{ servicio['nombre'] }}</h4>
-                    <p class="text-muted">{{ servicio['descripcion'] }}</p>
+                    <p>{{ servicio['descripcion'] }}</p>
                     <p class="tiempo"><i class="far fa-clock"></i> Tiempo: {{ servicio['tiempo'] }}</p>
                     <p class="precio">${{ "{:,.0f}".format(servicio['precio']) }} COP</p>
                     <a href="https://wa.me/573107616619?text=Hola,%20quiero%20agendar:%20{{ servicio['nombre'] }}" class="btn-wa" target="_blank">
@@ -55,6 +88,13 @@
                 </div>
             </div>
             {% endfor %}
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p><i class="fas fa-check-circle" style="color: #10b981;"></i> Técnicos certificados con experiencia</p>
+            <p style="margin-top: 0.5rem;">© 2026 Soporte Técnico Cruz González</p>
         </div>
     </div>
 

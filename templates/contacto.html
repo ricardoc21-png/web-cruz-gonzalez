@@ -8,23 +8,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Poppins', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
-        .navbar-custom { background: white; padding: 1rem 0; box-shadow: 0 2px 20px rgba(0,0,0,0.1); }
-        .navbar-custom .nav-link { color: #2d3748; font-weight: 600; margin: 0 10px; }
-        .contacto-card { background: white; border-radius: 20px; padding: 3rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
-        .contacto-item { padding: 1.5rem; border-bottom: 1px solid #edf2f7; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+            min-height: 100vh;
+        }
+        .navbar-custom {
+            background: white; box-shadow: 0 4px 20px rgba(14, 165, 233, 0.2);
+            padding: 1rem 0; position: sticky; top: 0; z-index: 1000;
+            border-bottom: 3px solid #0ea5e9;
+        }
+        .navbar-custom .nav-link { color: #0f172a; font-weight: 600; margin: 0 10px; }
+        .navbar-custom .nav-link:hover { color: #0ea5e9; }
+        .navbar-brand { color: #0ea5e9 !important; font-weight: 700; }
+        h1 { color: white; text-align: center; padding: 3rem 0; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        .contacto-card {
+            background: white; border-radius: 20px; padding: 3rem;
+            box-shadow: 0 10px 30px rgba(14, 165, 233, 0.2);
+            border-top: 4px solid #0ea5e9;
+        }
+        .contacto-item {
+            padding: 1.5rem; border-bottom: 1px solid #e2e8f0;
+            display: flex; align-items: center; flex-wrap: wrap;
+        }
         .contacto-item:last-child { border-bottom: none; }
-        .contacto-icon { font-size: 2rem; color: #667eea; margin-right: 1rem; }
-        h1 { color: white; text-align: center; padding: 3rem 0; font-weight: 700; }
-        .btn-wa { background: #25d366; color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.2rem; display: inline-block; }
-        .btn-wa:hover { background: #128c7e; color: white; }
+        .contacto-icon { font-size: 2rem; color: #0ea5e9; margin-right: 1rem; }
+        .contacto-item strong { color: #0f172a; font-size: 1.1rem; }
+        .contacto-item p { color: #64748b; margin: 0.5rem 0 0 0; width: 100%; }
+        .btn-wa {
+            background: #25d366; color: white;
+            padding: 15px 30px; border-radius: 50px;
+            text-decoration: none; font-weight: 700; font-size: 1.2rem;
+            display: inline-block; transition: all 0.3s;
+            margin-top: 1rem;
+        }
+        .btn-wa:hover { background: #128c7e; color: white; transform: scale(1.05); }
+        .footer {
+            background: white; margin-top: 3rem; padding: 2rem 0;
+            text-align: center; border-top: 3px solid #0ea5e9;
+        }
+        .footer p { color: #64748b; margin: 0; }
     </style>
 </head>
 <body>
 
-    <nav class="navbar-custom sticky-top">
+    <nav class="navbar-custom">
         <div class="container d-flex justify-content-between align-items-center flex-wrap">
-            <a class="navbar-brand fw-bold" href="/"><i class="fas fa-laptop-code text-primary"></i> Cruz González</a>
+            <a class="navbar-brand" href="/"><i class="fas fa-laptop-code"></i> Cruz González</a>
             <div class="d-flex flex-wrap">
                 <a href="/" class="nav-link">Inicio</a>
                 <a href="/equipos" class="nav-link">Equipos</a>
@@ -42,36 +73,51 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="contacto-card">
-                    <h2 class="mb-4">¿Cómo podemos ayudarte?</h2>
+                    <h2 class="mb-4" style="color: #0f172a; font-weight: 700;">¿Cómo podemos ayudarte?</h2>
                     
                     <div class="contacto-item">
                         <i class="fab fa-whatsapp contacto-icon"></i>
-                        <strong>WhatsApp:</strong>
-                        <p class="mb-0">+57 310 761 6619</p>
-                        <a href="https://wa.me/573107616619" class="btn-wa mt-2" target="_blank">
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <p>+57 310 761 6619</p>
+                        </div>
+                        <a href="https://wa.me/573107616619" class="btn-wa" target="_blank" style="margin-left: auto;">
                             <i class="fab fa-whatsapp"></i> Chatear Ahora
                         </a>
                     </div>
                     
                     <div class="contacto-item">
                         <i class="fas fa-envelope contacto-icon"></i>
-                        <strong>Email:</strong>
-                        <p class="mb-0">ricardoc21@gmail.com</p>
+                        <div>
+                            <strong>Email</strong>
+                            <p>ricardoc21@gmail.com</p>
+                        </div>
                     </div>
                     
                     <div class="contacto-item">
                         <i class="fas fa-clock contacto-icon"></i>
-                        <strong>Horario de Atención:</strong>
-                        <p class="mb-0">Lunes a Sábado: 8:00 AM - 6:00 PM</p>
+                        <div>
+                            <strong>Horario de Atención</strong>
+                            <p>Lunes a Sábado: 8:00 AM - 6:00 PM</p>
+                        </div>
                     </div>
                     
                     <div class="contacto-item">
                         <i class="fas fa-map-marker-alt contacto-icon"></i>
-                        <strong>Ubicación:</strong>
-                        <p class="mb-0">Colombia - Atención presencial y remota</p>
+                        <div>
+                            <strong>Ubicación</strong>
+                            <p>Colombia - Atención presencial y remota</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p><i class="fas fa-check-circle" style="color: #10b981;"></i> Respuesta rápida garantizada</p>
+            <p style="margin-top: 0.5rem;">© 2026 Soporte Técnico Cruz González</p>
         </div>
     </div>
 
