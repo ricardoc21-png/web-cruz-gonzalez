@@ -3,7 +3,7 @@
     "id": 1,
     "nombre": "Mantenimiento Preventivo",
     "descripcion": "Limpieza interna, cambio de pasta térmica, optimización de sistema",
-    "precio": 80000,
+    "precio": "Cotización personalizada",
     "tiempo": "2-3 horas",
     "icono": "fa-broom"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "nombre": "Mantenimiento Correctivo",
     "descripcion": "Diagnóstico y reparación de fallas de hardware o software",
-    "precio": 120000,
+    "precio": "Según diagnóstico",
     "tiempo": "1-5 días",
     "icono": "fa-tools"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "nombre": "Instalación de Sistema Operativo",
     "descripcion": "Windows 10/11 original con drivers y programas básicos",
-    "precio": 70000,
+    "precio": "Cotización personalizada",
     "tiempo": "2-4 horas",
     "icono": "fa-windows"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "nombre": "Recuperación de Datos",
     "descripcion": "Recuperación de archivos de discos duros dañados",
-    "precio": 150000,
+    "precio": "Según diagnóstico",
     "tiempo": "1-3 días",
     "icono": "fa-database"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "nombre": "Upgrade de Hardware",
     "descripcion": "Instalación de RAM, SSD o cambio de componentes",
-    "precio": 50000,
+    "precio": "Cotización personalizada",
     "tiempo": "1-2 horas",
     "icono": "fa-microchip"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "nombre": "Eliminación de Virus",
     "descripcion": "Limpieza completa de malware, virus y spyware",
-    "precio": 60000,
+    "precio": "Cotización personalizada",
     "tiempo": "2-4 horas",
     "icono": "fa-shield-virus"
   }

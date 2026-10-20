@@ -81,7 +81,7 @@
                     <h4>{{ servicio['nombre'] }}</h4>
                     <p>{{ servicio['descripcion'] }}</p>
                     <p class="tiempo"><i class="far fa-clock"></i> Tiempo: {{ servicio['tiempo'] }}</p>
-                    <p class="precio">${{ "{:,.0f}".format(servicio['precio']) }} COP</p>
+                    <p class="precio" style="font-size: 1.3rem; color: #f59e0b;">{{ servicio['precio'] }}</p>
                     <a href="https://wa.me/573107616619?text=Hola,%20quiero%20agendar:%20{{ servicio['nombre'] }}" class="btn-wa" target="_blank">
                         <i class="fab fa-whatsapp"></i> Agendar Servicio
                     </a>
