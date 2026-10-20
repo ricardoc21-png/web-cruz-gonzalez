@@ -73,7 +73,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ sw['nombre'] }}</h5>
                         <p class="card-text">{{ sw['descripcion'] }}</p>
-                        <p class="precio">${{ "{:,.0f}".format(sw['precio']) }} COP</p>
+                        <p class="precio" style="font-size: 1.3rem; color: #f59e0b;">{{ sw['precio'] }}</p>
                         <a href="https://wa.me/573107616619?text=Hola,%20me%20interesa%20el%20software:%20{{ sw['nombre'] }}" class="btn-wa" target="_blank">
                             <i class="fab fa-whatsapp"></i> Consultar
                         </a>
