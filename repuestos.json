@@ -1,50 +1,42 @@
 [
   {
     "id": 1,
-    "nombre": "Memoria RAM DDR4 8GB",
-    "descripcion": "Compatible con laptops y PCs (Consultar marca)",
+    "nombre": "PC de Escritorio Armado",
+    "descripcion": "Equipos de escritorio personalizados según tu necesidad (Oficina o Diseño)",
     "precio": "Consultar precio",
-    "imagen_url": "https://images.unsplash.com/photo-1562976540-1502c2145186?w=400",
+    "imagen_url": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=400",
     "disponible": true
   },
   {
     "id": 2,
-    "nombre": "SSD 480GB Kingston",
-    "descripcion": "Aumenta la velocidad de tu equipo (SATA o NVMe)",
+    "nombre": "Partes y Componentes",
+    "descripcion": "Memorias RAM, Discos SSD, Fuentes de Poder, Procesadores y más",
     "precio": "Consultar precio",
-    "imagen_url": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=400",
+    "imagen_url": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400",
     "disponible": true
   },
   {
     "id": 3,
-    "nombre": "Batería para Lenovo ThinkPad",
-    "descripcion": "Batería original 6 celdas (Consultar modelo exacto)",
-    "precio": "Consultar precio",
-    "imagen_url": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400",
+    "nombre": "Reparación de Board",
+    "descripcion": "Reparación electrónica a nivel de componente (No solo cambio de piezas)",
+    "precio": "Cotizar reparación",
+    "imagen_url": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=400",
     "disponible": true
   },
   {
     "id": 4,
-    "nombre": "Cargador Universal 90W",
-    "descripcion": "Compatible con Dell, HP, Lenovo (Puntas intercambiables)",
+    "nombre": "Pantallas Todo en Uno (AIO)",
+    "descripcion": "Venta y cambio de pantallas para equipos All-in-One (HP, Lenovo, Dell)",
     "precio": "Consultar precio",
-    "imagen_url": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400",
+    "imagen_url": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400",
     "disponible": true
   },
   {
     "id": 5,
-    "nombre": "Teclado para HP ProBook",
-    "descripcion": "Teclado original en español (Consultar serie)",
+    "nombre": "Cargadores y Accesorios",
+    "descripcion": "Cargadores originales y genéricos, teclados, mouse y bases refrigerantes",
     "precio": "Consultar precio",
-    "imagen_url": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400",
-    "disponible": true
-  },
-  {
-    "id": 6,
-    "nombre": "Pasta Térmica Arctic MX-4",
-    "descripcion": "Para mantenimiento preventivo (Alto rendimiento)",
-    "precio": "Consultar precio",
-    "imagen_url": "https://images.unsplash.com/photo-1587202372775-e229f172b9d8?w=400",
+    "imagen_url": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400",
     "disponible": true
   }
 ]
