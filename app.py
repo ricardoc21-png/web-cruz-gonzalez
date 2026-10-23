@@ -8,13 +8,11 @@ load_dotenv('/home/RichiCruz21/catalogo_seguro/.env')
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv('FLASK_SECRET_KEY')
 
-# Función para cargar datos desde JSON
 def cargar_json(archivo):
     ruta = os.path.join(os.path.dirname(__file__), archivo)
     with open(ruta, 'r', encoding='utf-8') as f:
         return json.load(f)
 
-# RUTAS
 @app.route('/')
 def inicio():
     return render_template('inicio.html')
@@ -31,11 +29,6 @@ def repuestos():
     datos = cargar_json('repuestos.json')
     disponibles = [e for e in datos if e.get('disponible', True)]
     return render_template('repuestos.html', repuestos=disponibles)
-
-@app.route('/servicios')
-def servicios():
-    datos = cargar_json('servicios.json')
-    return render_template('servicios.html', servicios=datos)
 
 @app.route('/software')
 def software():
