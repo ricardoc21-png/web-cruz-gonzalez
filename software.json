@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "nombre": "Microsoft Office 2021",
+    "nombre": "Microsoft Office 365",
     "descripcion": "Word, Excel, PowerPoint, Outlook",
     "precio": "Consultar disponibilidad",
     "imagen_url": "https://images.unsplash.com/photo-1633419461186-7d40a38105ec?w=400",
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "nombre": "AutoCAD 2024",
+    "nombre": "AutoCAD 2027",
     "descripcion": "Licencia para diseño técnico",
     "precio": "Consultar disponibilidad",
     "imagen_url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400",
